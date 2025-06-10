@@ -1,4 +1,4 @@
-name: Code Quality and Pages
+name: Code Quality
 
 on:
   push:
@@ -9,7 +9,6 @@ on:
 
 jobs:
   code-quality:
-    name: Code Quality
     runs-on: ubuntu-latest
     timeout-minutes: 15
     strategy:
