@@ -27,7 +27,7 @@ jobs:
       # Install cmake to build onnxsim from sdists for Python 3.12 until http://github.com/daquexian/onnx-simplifier/pull/353
       - name: Install dependencies
         run: |
-          apt-get update && apt-get install -y cmake
+          sudo apt-get update && sudo apt-get install -y cmake
           pip install onnxsim
           pip install tox
           pip install -e .
